@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../teste-vercel-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portifolio_vg",
+		"liveServer.settings.port": 5501
+	}
+}
