@@ -10,8 +10,8 @@ function load(){
 
     
     menuBtn.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-    })
+        navLinks.classList.toggle('mobile-menu');
+    });
 
 
 }

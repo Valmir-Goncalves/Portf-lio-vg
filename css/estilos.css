@@ -78,8 +78,8 @@ html{
 
 header{
     flex: 1;/*xxx*/
-    padding: 0;
-    margin-top: 0;
+    /*padding: 0;-----*/
+    /*margin-top: 0;---*/
     width: 100vw;
     height: 60rem;
     background-image: url('../img/sda.webp');
@@ -137,12 +137,12 @@ header{
     font-size: 7vmin;
     margin-top: 100px;
     /*margin-bottom: 30px;*/
-    display: flex;
-    bottom: 0.9px;
+    /*display: flex;----*/
+    /*bottom: 0.9px;*/
     transform: translateX(-50%);
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    /*flex-direction: column;---*/
+    /*align-items: center;---*/
     left: 50%;
 
 }
@@ -486,7 +486,7 @@ textarea{
 
 
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -568,8 +568,8 @@ footer{
     .imagem-sobreposta {
       width: 100%; /* Ajuste a largura para telas menores */
     }
-  }
-@media only screen and (max-width:768px){
+  
+/*@media only screen and (max-width:768px){*/
     .menu-btn{
         display: block; /* Exibe o botão de menu em telas menores */
     }
@@ -579,22 +579,23 @@ footer{
     
     .nav-links{
         flex-direction: column;
-        top: 60px;
+        top: 0px;
         right: 0;
         width: 100%;
         height: 100vh; 
         justify-content: center;
         background: #484872;
         align-items: center;
-        margin-top: -9000px;
-        transition: all 0.5s ease;
+        /*margin-top: -9000px;*/
+        transition: all 0.5s ease-in-out;
+        position: absolute;
         opacity: 0;
         pointer-events: none;
     }
-    .mobile-menu{
+    /*.mobile-menu{
         margin-top: 0px;
         border-bottom-right-radius:30% ;
-    }
+    }----*/
 
     .nav-links.mobile-menu {
         opacity: 1;
@@ -606,8 +607,11 @@ footer{
     }
     
     header {
+        width: 100;
         height: auto; /* Permite que o header se ajuste automaticamente */
         padding: 20px;
+        background-size: cover;
+        background-position: center;
     }
 
     .header-content h1 {
@@ -689,7 +693,7 @@ img:hover{
     font-size: 12px; /* Tamanho menor para o texto no rodapé */
 }
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
     .header-content h1 {
         font-size: 4vmin;
     }
@@ -709,5 +713,5 @@ img:hover{
     .footer-content h3 {
         font-size: 1.5rem;
     }
-}
+}*/
 
