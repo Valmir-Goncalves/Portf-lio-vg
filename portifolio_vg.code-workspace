@@ -1,10 +1,12 @@
+
+
 {
 	"folders": [
 		{
 			"path": ".."
 		},
 		{
-			"path": "../../teste-vercel-main"
+			"path": "../../portifolio_vg"
 		}
 	],
 	"settings": {

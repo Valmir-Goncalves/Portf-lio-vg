@@ -560,6 +560,8 @@ footer{
     color: #fff;
 }
 
+
+
 /* responsivo */
 @media (max-width: 768px) {
     
@@ -567,9 +569,9 @@ footer{
       width: 100%; /* Ajuste a largura para telas menores */
     }
   }
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:768px){
     .menu-btn{
-        display: block;
+        display: block; /* Exibe o botão de menu em telas menores */
     }
     .navbar{
         padding: 0;
@@ -577,22 +579,49 @@ footer{
     
     .nav-links{
         flex-direction: column;
+        top: 60px;
+        right: 0;
         width: 100%;
-        height: 100vh;
+        height: 100vh; 
         justify-content: center;
         background: #484872;
+        align-items: center;
         margin-top: -9000px;
         transition: all 0.5s ease;
+        opacity: 0;
+        pointer-events: none;
     }
     .mobile-menu{
         margin-top: 0px;
         border-bottom-right-radius:30% ;
     }
+
+    .nav-links.mobile-menu {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     .nav-links li{
         margin: 30px auto;
     }
     
+    header {
+        height: auto; /* Permite que o header se ajuste automaticamente */
+        padding: 20px;
+    }
 
+    .header-content h1 {
+        font-size: 5vmin; /* Reduz o tamanho do texto em telas menores */
+        margin-top: 50px;
+    }
+
+    .header-content h2 {
+        font-size: 3vmin; /* Ajuste do subtítulo */
+    }
+
+    .footer-intro {
+        bottom: 20px; /* Ajuste a distância do rodapé */
+    }
     /*Events*/
     .row{
         flex-direction: column;
@@ -606,7 +635,7 @@ footer{
 
     /*explore*/
     .explore-content{
-        width: 100%;
+        width: 90%;  /* O conteúdo de "explore" ocupa mais da tela */
     }
     .tours .column{
         width: 100%;
@@ -617,7 +646,7 @@ footer{
     }
 
     .image-gallery img{
-        width: 90%;
+        width: 100%;  /* Ajusta o tamanho das imagens em telas menores */
     }
 
 
@@ -629,6 +658,8 @@ footer{
 
 img{
     transition: transform .3s ease;
+    max-width: 100%;
+    height: auto;
 }
 
 img:hover{
@@ -639,3 +670,44 @@ img:hover{
     background: whitesmoke;
     color: #49497e;
 }
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-map, .contact-form {
+    width: 100%; /* Mapas e formulários ocupam 100% da largura */
+}
+
+.socials li {
+    margin: 0 5px; /* Ajuste o espaçamento entre ícones sociais */
+}
+
+.footer-bottom p {
+    font-size: 12px; /* Tamanho menor para o texto no rodapé */
+}
+
+@media only screen and (max-width: 480px) {
+    .header-content h1 {
+        font-size: 4vmin;
+    }
+
+    .header-content h2 {
+        font-size: 2.5vmin;
+    }
+
+    .explore-content h1 {
+        font-size: 6vmin;
+    }
+
+    .nav-links li {
+        margin: 20px auto;
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
